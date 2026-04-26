@@ -81,7 +81,7 @@ Main() {
 			return data
 		}
 	
-		if(data.mouseX <= 40 and data.mouseY <= 40){
+		if(data.mouseX <= 48 and data.mouseY <= 48){
 			data.ON_ICON := True
 		} else {
 			data.ON_ICON := False
