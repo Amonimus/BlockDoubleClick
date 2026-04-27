@@ -17,8 +17,8 @@ block := False
 	data := Main()
 	
 	;Debug.
-	data_str := object_to_string(data)
-	ToolTip(join_str(data_str))
+	;data_str := object_to_string(data)
+	;ToolTip(join_str(data_str))
 		
 	; Lifts the block depending on how fast the second click was
 	double_click_time := DllCall("GetDoubleClickTime")
@@ -35,8 +35,8 @@ block := False
 	data := Main()
 	
 	;Debug.
-	data_str := object_to_string(data)
-	ToolTip(join_str(data_str))
+	;data_str := object_to_string(data)
+	;ToolTip(join_str(data_str))
 		
 	; Block condition
 	if(data.ON_ICON == True){

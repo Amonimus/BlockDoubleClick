@@ -161,6 +161,10 @@ GetHwndInfo(hwnd, hwnd_control){
 			class: hwnd_class,
 			process: processName,
 		}
+		; Prevents tooltip clicks from getting own text
+		if(data.class == "tooltips_class_32"){
+			data.title := "Tooltip"
+		}
 		return data
 	} else {
 		return {}
